@@ -16,8 +16,11 @@ def build_vocab(text):
     # cleanOrderedList = sorted(uniqueCharsList)
     return sorted(set(text))
 
-# Step 2 - build_stoi (not yet solved)
-# TODO: implement
+# Step 2 - build_stoi
+def build_stoi(vocab):
+    """Return a dict mapping each character in vocab to its index."""
+    stringToIndex = {character: i for i, character in enumerate(vocab)}
+    return stringToIndex
 
 # Step 3 - build_itos (not yet solved)
 # TODO: implement
