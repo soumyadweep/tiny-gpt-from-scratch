@@ -9,12 +9,12 @@ import numpy as np
 # Step 1 - build_vocab
 def build_vocab(text):
     """Return a sorted list of unique characters in text."""
-    allChars= list(text)
-    uniqueCharsDict = dict.fromkeys(allChars)
-    uniqueCharsList = list(uniqueCharsDict)
+    # allChars= list(text)
+    # uniqueCharsDict = dict.fromkeys(allChars)
+    # uniqueCharsList = list(uniqueCharsDict)
     # cleanList = [c for c in uniqueCharsList if c.isalpha()]
-    cleanOrderedList = sorted(uniqueCharsList)
-    return cleanOrderedList
+    # cleanOrderedList = sorted(uniqueCharsList)
+    return sorted(set(text))
 
 # Step 2 - build_stoi (not yet solved)
 # TODO: implement
